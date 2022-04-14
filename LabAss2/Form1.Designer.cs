@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(479, 189);
+            this.ClientSize = new System.Drawing.Size(503, 210);
             this.Controls.Add(this.btnDivision);
             this.Controls.Add(this.btnMultiplication);
             this.Controls.Add(this.btnMinus);
