@@ -148,6 +148,7 @@
             this.label12.Size = new System.Drawing.Size(111, 15);
             this.label12.TabIndex = 16;
             this.label12.Text = "Customer Name";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label7
             // 
