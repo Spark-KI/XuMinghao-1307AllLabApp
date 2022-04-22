@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms;
 
 namespace LabAss3
 {
@@ -98,7 +97,7 @@ namespace LabAss3
         }
         private void displayCustomer(string id)
         {
-            string strConnection = "Data Source=LAPTOP-9M4AC0J3;Initial Catalog=CustomerDB;Persist Security Info=True;User ID=sa;Password=123456;Pooling=False";
+            string strConnection = "Data Source=DESKTOP-6BLL5M4;Initial Catalog=CustomerDB;Persist Security Info=True;User ID=sa;Password=123456;Pooling=False";
             SqlConnection objConnection = new SqlConnection(strConnection);
             objConnection.Open();
             string strCommand = "Select * from Customer where id =" + id;
@@ -147,7 +146,7 @@ namespace LabAss3
             else Hobby = "Painting";
             if (radioMarried.Checked) Status = "1";
             else Status = "0";
-            string strConnection = "Data Source=LAPTOP-9M4AC0J3;Initial Catalog=CustomerDB;Persist Security Info=True;User ID=sa;Password=123456;Pooling=False";
+            string strConnection = "Data Source=DESKTOP-6BLL5M4;Initial Catalog=CustomerDB;Persist Security Info=True;User ID=sa;Password=123456;Pooling=False";
             SqlConnection objConnection = new SqlConnection(strConnection);
             objConnection.Open();
             string strCommand = "UPDATE Customer SET CustomerName =@CustomerName, Country=@Country, Gender=@Gender,Hobby=@Hobby,Married= @Married WHERE id=@id";
@@ -166,7 +165,7 @@ namespace LabAss3
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            string strConnection = "Data Source=LAPTOP-9M4AC0J3;Initial Catalog=CustomerDB;Persist Security Info=True;User ID=sa;Password=123456;Pooling=False";
+            string strConnection = "Data Source=DESKTOP-6BLL5M4;Initial Catalog=CustomerDB;Persist Security Info=True;User ID=sa;Password=123456;Pooling=False";
             SqlConnection objConnection = new SqlConnection(strConnection);
             objConnection.Open();
             string strCommand = "Delete from Customer where id ='" + lblID.Text + "'";
