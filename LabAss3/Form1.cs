@@ -93,7 +93,6 @@ namespace LabAss3
             clearForm();
             string id = dtgCustomer.Rows[e.RowIndex].Cells[0].Value.ToString();
             displayCustomer(id);
-
         }
         private void displayCustomer(string id)
         {
